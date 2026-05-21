@@ -570,10 +570,10 @@ var state = {
   co2Saved: 14.8,
   pending: null,
   history: [
-    {type:'good',  labelKey:'good_lbl',   subKey:'good_sub',   pts:10,  dateKey:'yesterday', co2:4.2},
-    {type:'ok',    labelKey:'ok_lbl',     subKey:'ok_sub',     pts:2,   dateKey:'d2ago',     co2:1.1},
+    {type:'good',  labelKey:'good_lbl',   subKey:'good_sub',   pts:5,  dateKey:'yesterday', co2:4.2},
+    {type:'ok',    labelKey:'ok_lbl',     subKey:'ok_sub',     pts:1,   dateKey:'d2ago',     co2:1.1},
     {type:'spend', labelKey:'spend_lbl',  subKey:'spend_sub',  pts:-20, dateKey:'lastweek',  co2:0},
-    {type:'good',  labelKey:'good2_lbl',  subKey:'good2_sub',  pts:10,  dateKey:'lastweek',  co2:4.2},
+    {type:'good',  labelKey:'good2_lbl',  subKey:'good2_sub',  pts:5,  dateKey:'lastweek',  co2:4.2},
   ]
 };
 
@@ -706,7 +706,7 @@ function aSimulateScan() {
   var localResult = getLatestKioskResult();
   
   var map = {
-    'undamaged': { type:'good', lblKey:'scan_good_lbl', subKey:'scan_good_sub', pts:10, co2:4.2 },
+    'undamaged': { type:'good', lblKey:'scan_good_lbl', subKey:'scan_good_sub', pts:5, co2:4.2 },
     'damaged-recyclable': { type:'ok', lblKey:'scan_rec_lbl', subKey:'scan_rec_sub', pts:2, co2:1.1 },
     'damaged-nonrecyclable': { type:'ok', lblKey:'scan_up_lbl', subKey:'scan_up_sub', pts:2, co2:1.5 }
   };
