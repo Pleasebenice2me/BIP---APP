@@ -271,7 +271,7 @@ body {
 .rc-d  { font-size: 13px; line-height: 1.5; margin-bottom: 16px; color: var(--ink-muted); }
 .token-pill {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 10px 20px; background: var(--white);
+  padding: 10px 20px; background: #ffffff;
   border-radius: 30px; font-size: 16px; font-weight: 700;
   color: var(--primary); box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
@@ -707,8 +707,8 @@ function aSimulateScan() {
   
   var map = {
     'undamaged': { type:'good', lblKey:'scan_good_lbl', subKey:'scan_good_sub', pts:5, co2:4.2 },
-    'damaged-recyclable': { type:'ok', lblKey:'scan_rec_lbl', subKey:'scan_rec_sub', pts:2, co2:1.1 },
-    'damaged-nonrecyclable': { type:'ok', lblKey:'scan_up_lbl', subKey:'scan_up_sub', pts:2, co2:1.5 }
+    'damaged-recyclable': { type:'ok', lblKey:'scan_rec_lbl', subKey:'scan_rec_sub', pts:1, co2:1.1 },
+    'damaged-nonrecyclable': { type:'ok', lblKey:'scan_up_lbl', subKey:'scan_up_sub', pts:1, co2:1.5 }
   };
   
   var target = map[localResult];
